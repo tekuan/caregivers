@@ -1,5 +1,138 @@
 <!DOCTYPE html>
-<div id="divbusca">
-    <input type="text" id="txtBusca" placeholder="Buscar...">
-    <img src="search3.png"
-</div>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="cuidador">
+    <title>CUIDADORES</title>
+
+    <style>
+        h1 {
+            color: rgb(11, 199, 73);
+        }
+
+        h2 {
+            display: flex;
+            font-size: 30px;
+            justify-content: center;
+        }
+
+        h3 {
+            display: flex;
+            justify-content: center;
+            font-size: default;
+        }
+
+        h4 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(123, 243, 163);
+            width: 800px;
+            height: 20px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .Cadastrese {
+            background-color: rgb(11, 199, 73);
+        }
+
+        .BuscarCuidador {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(11, 199, 73);
+        }
+
+        .BarradepesquisaEBusca {
+            display: flex;
+            justify-content: center;
+        }
+
+        .Depoimentos {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+
+        }
+
+        .Tutorial {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+        }
+
+        .Rodape {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            align-content: flex-end;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Cuidadores</h1>
+        <ul>
+            <li><a href="#Páginainicial">Página Inicial</a></li>
+            <li><a href="#encontrarumcuidador">Encontrar um Cuidador</a></li>
+            <li><a href="#cadastro">Cadastro</a></li>
+            <li><a href="#suporte">Suporte</a></li>
+        </ul>
+
+        <div>
+            <button type="button">Entrar</button>
+            <button class="Cadastrese" type="button">Cadastre-se</button>
+        </div>
+
+    </div>
+
+    <div id="divbusca"></div>
+    <h2>Encontre um cuidador que atenda aos seus interesses.</h2>
+
+    <form>
+        <div id="divbusca"></div>
+        <div button class="BarradepesquisaEBusca"> <input type="text" id="txtBusca"
+                placeholder="Palavra-chave, Localização"> <button class="BuscarCuidador" type="submit">Buscar
+                Cuidador</button> </div>
+    </form>
+
+    <h3>Depoimentos</h3>
+
+    <div class="Depoimentos">
+        <div>Simples e prático.</div>
+        <div>Lorem, ipsum dolor.</div>
+        <div>Lorem, ipsum dolor.</div>
+    </div>
+
+    <h4>Como cadastrar um cuidador no portal?</h4>
+
+    <div class="Tutorial">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ducimus.</div>
+    </div>
+    <div class="Rodape">
+        <footer class="Rodape">© 2024 Cuidadores - Portal de Emprego. Todos os Direitos Reservados.</footer>
+    </div>
+
+</body>
+
+</html>
