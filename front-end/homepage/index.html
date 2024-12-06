@@ -9,12 +9,13 @@
     <style>
         h1 {
             color: rgb(11, 199, 73);
+            font-size: default;
         }
 
         h2 {
             display: flex;
-            font-size: 30px;
             justify-content: center;
+            font-size: 35px;
         }
 
         h3 {
@@ -26,6 +27,7 @@
         h4 {
             display: flex;
             justify-content: center;
+            font-size: 20px;
         }
 
         .container ul {
@@ -40,9 +42,17 @@
         .container {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
+        .container2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+.cordafonte {
+    color: rgb(11, 199, 73);
+}
         .Cadastrese {
             background-color: rgb(11, 199, 73);
         }
@@ -74,6 +84,7 @@
         footer {
             display: flex;
             align-self: center;
+            background-color: rgb(11, 199, 73);
         }
 
         body {
@@ -92,10 +103,19 @@
         .page {
             display: flex;
             flex-direction: column;
-            gap: 100px;
+            gap: 50px;
             height: 100%;
             flex: 1;
 
+        }
+
+        .quadro2 {
+            display: flex;
+            justify-content: space-around;
+            height: 40%;
+        }
+        img {
+            height: 100%;
         }
     </style>
 
@@ -103,50 +123,58 @@
 
 <body>
     <div class="container">
-        <h1>Cuidadores</h1>
         <ul>
-            <li><a href="#Páginainicial">Página Inicial</a></li>
-            <li><a href="#encontrarumcuidador">Encontrar um Cuidador</a></li>
-            <li><a href="#cadastro">Cadastro</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#encontreumcuidador">Encontre um cuidador</a></li>
+            <li><a href="#candidatos">Candidatos</a></li>
             <li><a href="#suporte">Suporte</a></li>
         </ul>
+    </div>
 
+    <div class="container2">
+        <h1>Cuidadores</h1>
+        <div class="Busca"> <input type=text id="txtBusca" placeholder="Palavra-chave, localização, ..."></buttom>
+        </div>
         <div>
-            <button type="button">Entrar</button>
+            <button class="cordafonte" type="button">Entrar</button>
             <button class="Cadastrese" type="button">Cadastre-se</button>
         </div>
-
     </div>
 
     <div class="page">
+        <div class="quadro2">
+            <div>
+                <h2>Encontre um cuidador que atenda aos seus interesses.</h2>
+                <form>
+                    <div id="divbusca"></div>
+                    <div button class="BarradepesquisaEBusca"> <input type="text" id="txtBusca"
+                            placeholder="Palavra-chave, Localização"> <button class="BuscarCuidador"
+                            type="submit">Buscar
+                            Cuidador</button> </div>
+                </form>
+            </div>
+            <div>
+                <img src="../assets/images/homepage.png">
+            </div>
+        </div>
         <div>
-            <h2>Encontre um cuidador que atenda aos seus interesses.</h2>
-        <form>
-            <div id="divbusca"></div>
-            <div button class="BarradepesquisaEBusca"> <input type="text" id="txtBusca"
-                    placeholder="Palavra-chave, Localização"> <button class="BuscarCuidador" type="submit">Buscar
-                    Cuidador</button> </div>
-        </form>
+            <h3>Depoimentos</h3>
+            <div class="Depoimentos">
+                <div>Simples e prático. Parabéns!</div>
+                <div>O site ficou muito bom.</div>
+                <div>Achei útil tanto para quem é cuidador, tanto para quem deseja encontrar um cuidador.</div>
+            </div>
+
         </div>
 
         <div>
-        <h3>Depoimentos</h3>
-        <div class="Depoimentos">
-            <div>Simples e prático. Parabéns!</div>
-            <div>O site ficou muito bom.</div>
-            <div>Achei útil tanto para quem é cuidador, tanto para quem deseja encontrar um cuidador.</div>
+            <h4>Como cadastrar um cuidador no portal?</h4>
+            <div class="Tutorial">
+                <div>Criar conta</div>
+                <div>Upload CV/Currículo</div>
+                <div>Publique seu CV</div>
+            </div>
         </div>
-
-        </div>
-
-        <div>
-        <h4>Como cadastrar um cuidador no portal?</h4>
-        <div class="Tutorial">
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-            <div>Lorem ipsum dolor sit amet.</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ducimus.</div>
-        </div>
-</div>
     </div>
 
     <footer>© 2024 Cuidadores - Portal de Emprego. Todos os Direitos Reservados.</footer>
