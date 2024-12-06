@@ -10,7 +10,8 @@
 color: green; background-color: rgb(106, 177, 106);
     }
     .a12{
-      border: 1px solid;
+      border: 1px solid #eeeeee;
+
     }
     
     body {
@@ -26,18 +27,44 @@ color: green; background-color: rgb(106, 177, 106);
 
     .menu {
       display: flex;
-      background-color: rgb(201, 201, 201);
+      background-color: rgb(236, 236, 236);
       width: 100%;
-      align-items: center;
-      justify-content: center;      
+      justify-content: center;
+
     }
 
     .menuhorizontal {
       display: flex;
-      justify-content: space-between;
-      /* list-style-type: none; alinhar o menu ao centro */
+      width: 25%;
+      justify-content: space-around;
+      list-style: none;
+      font-size: medium;
+
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: #8f8f8f;
+
+    }
+    
+    a:hover {
+      color: rgb(128, 196, 128);
+      border-bottom: 2px solid #4043ff;
+      padding-bottom: 12px;
+
+    }
+
+    .maletinha {
+      display: flex;
+      color: rgb(0, 0, 0);
+      justify-content: flex-start;
       
 
+    }
+
+    a {
+      text-decoration: none;
     }
     
     </style>
@@ -54,7 +81,10 @@ color: green; background-color: rgb(106, 177, 106);
     </div>
 
     <div>
+      <div class="maletinha">
+        <img src="maletinha.png" width="30" height="30">
       <h1>Caregivers</h1>
+    </div>
       <button>Filtros</button>
       <button class="cordobotao">Buscar</button>
     </div>
@@ -72,10 +102,7 @@ color: green; background-color: rgb(106, 177, 106);
       <img src="search.png" id="btnCity" alt="City" />
     </div>
 
-    <hr>
     <br>
-    <br>
-    <hr>
 
     <div class="a12">
       <h2> Clara Bytecode</h2>
@@ -145,6 +172,7 @@ color: green; background-color: rgb(106, 177, 106);
       <p>Dhaka, Bangladesh</p>
     </div>
     <hr>
+
     <br>
     <hr>
 
