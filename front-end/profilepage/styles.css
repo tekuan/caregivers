@@ -28,6 +28,7 @@ nav {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .profile-header {
@@ -67,11 +68,14 @@ ul {
     list-style-type: none;
 }
 
-aside {
-    width: 30%;
-    position: fixed;
+.aside {
+    width: 20%;
     top: 20px;
     right: 20px;
+}
+main{
+    display: flex;
+    align-items: center;
 }
 
 .card {
